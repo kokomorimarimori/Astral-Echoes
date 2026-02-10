@@ -1,6 +1,6 @@
 const comicPages = [
   {
-    image: "assets/images/page1.png",
+    image: "images/page1.jpg",
     alt: "Page 1: Opening scene",
     dialogue: `
       <p><strong>Character A:</strong> I didn't expect to see you here.</p>
@@ -9,7 +9,7 @@ const comicPages = [
     `
   },
   {
-    image: "assets/images/page2.png",
+    image: "images/page2.jpg",
     alt: "Page 2: Character introduction",
     dialogue: `
       <p><strong>Character A:</strong> This place hasn't changed.</p>
@@ -17,7 +17,7 @@ const comicPages = [
     `
   },
   {
-    image: "assets/images/page3.png",
+    image: "images/page3.jpg",
     alt: "Page 3: Cliffhanger"
     // No dialogue on this page (dialogue box won't render)
   }

@@ -15,10 +15,5 @@ const comicPages = [
       <p><strong>Character A:</strong> This place hasn't changed.</p>
       <p><strong>Character B:</strong> You have.</p>
     `
-  },
-  {
-    image: "assets/images/page3.png",
-    alt: "Page 3: Cliffhanger"
-    // No dialogue on this page (dialogue box won't render)
   }
 ];

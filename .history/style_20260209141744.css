@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+  background: #111;
+  color: #eee;
+  margin: 0;
+}
+
+header, main {
+  text-align: center;
+  padding: 1rem;
+}
+
+.comic-page {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.comic-nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+button {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.start-button {
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
