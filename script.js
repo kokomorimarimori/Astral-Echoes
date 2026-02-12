@@ -15,26 +15,20 @@ function renderPage() {
   img.className = "comic-page";
   container.appendChild(img);
 
-  // Collapsible dialogue box (optional per page)
+  // Collapsible dialogue (only if it exists)
   if (comicPages[pageIndex].dialogue) {
     const details = document.createElement("details");
     details.className = "dialogue-box";
 
     const summary = document.createElement("summary");
-    summary.textContent = "Show dialogue";
+    summary.textContent = "Read dialogue";
     details.appendChild(summary);
 
     const content = document.createElement("div");
     content.className = "dialogue-content";
     content.innerHTML = comicPages[pageIndex].dialogue;
+
     details.appendChild(content);
-
-    details.addEventListener("toggle", () => {
-      summary.textContent = details.open
-        ? "Hide dialogue"
-        : "Show dialogue";
-    });
-
     container.appendChild(details);
   }
 
@@ -44,17 +38,18 @@ function renderPage() {
 
 prevBtn.onclick = () => {
   if (pageIndex > 0) {
-    window.location.search = `?page=${pageIndex - 1}`;
+    pageIndex--;
+    window.location.search = `?page=${pageIndex}`;
   }
 };
 
 nextBtn.onclick = () => {
   if (pageIndex < comicPages.length - 1) {
-    window.location.search = `?page=${pageIndex + 1}`;
+    pageIndex++;
+    window.location.search = `?page=${pageIndex}`;
   }
 };
 
-// Keyboard navigation
 document.addEventListener("keydown", (e) => {
   if (["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) return;
 

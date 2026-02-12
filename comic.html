@@ -7,10 +7,25 @@
 </head>
 <body>
 
+  <!-- Header image shown on all pages -->
+  <header class="site-header">
+    <!-- Change this src to your header image path -->
+    <img class="site-header__img" src="assets/images/header.png" alt="Webcomic header">
+  </header>
+
   <main id="comic-container"></main>
 
   <nav class="comic-nav">
     <button id="prev" class="nav-left">← Prev</button>
+
+    <!-- Center slot: music player (shows only on pages that define `music`) -->
+    <div id="music-player" class="music-player" hidden>
+      <div id="music-title" class="music-title"></div>
+      <audio id="page-audio" controls preload="metadata"></audio>
+    </div>
+
+<div id="music-spacer" aria-hidden="true"></div>
+
     <button id="next" class="nav-right">Next →</button>
   </nav>
 
