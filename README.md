@@ -1,2 +1,2 @@
 # Astral-Echoes
-A twine story for FFXIV
+A collection of webcomics using FFXIV gposing.
